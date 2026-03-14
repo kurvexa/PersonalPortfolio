@@ -52,3 +52,21 @@ p{
 .socials a:hover{
     background:#1f1f1f;
 }
+
+/* --- Wobbling MP4 Video --- */
+.wobble-video {
+    width:40px;            /* small icon size */
+    height:40px;           /* keeps it square */
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:8px;       /* space from text */
+    animation: wobble 2s infinite ease-in-out;
+}
+
+@keyframes wobble {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(2deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+}
